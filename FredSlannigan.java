@@ -17,7 +17,7 @@ public class FredSlannigan {
 	
 	
 	public static void main(String[] args) throws LoginException{
-		JDA jda = JDABuilder.createDefault("Njk3ODQ0NjMzMTY1NjI3NDky.Xo9MdQ.d_xAoCq_TBWwaLlDVxmo-thBV_Q").addEventListeners(new Commands()).setMemberCachePolicy(MemberCachePolicy.ALL).setChunkingFilter(ChunkingFilter.ALL).enableIntents(GatewayIntent.GUILD_PRESENCES).enableIntents(GatewayIntent.GUILD_MEMBERS).enableIntents(GatewayIntent.GUILD_VOICE_STATES).enableCache(CacheFlag.VOICE_STATE).enableCache(CacheFlag.ACTIVITY).build();
+		JDA jda = JDABuilder.createDefault("KEY").addEventListeners(new Commands()).setMemberCachePolicy(MemberCachePolicy.ALL).setChunkingFilter(ChunkingFilter.ALL).enableIntents(GatewayIntent.GUILD_PRESENCES).enableIntents(GatewayIntent.GUILD_MEMBERS).enableIntents(GatewayIntent.GUILD_VOICE_STATES).enableCache(CacheFlag.VOICE_STATE).enableCache(CacheFlag.ACTIVITY).build();
 		jda.getPresence().setActivity(Activity.playing("fred michanigan"));
 		
 	}
