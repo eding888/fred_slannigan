@@ -129,7 +129,7 @@ public class Commands extends ListenerAdapter{
 
         }
         if(attachments.get(serverIndex).size()>30) {
-        	messages.get(serverIndex).remove(0);
+        	attachments.get(serverIndex).remove(0);
         }
         if(content.toLowerCase().contains(prefix + " recorded messages")) {
         	String sendMessages = new String("");
